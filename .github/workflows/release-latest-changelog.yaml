@@ -1,0 +1,32 @@
+name: Release latest changelog
+on:
+  push:
+    branches:
+      - "develop"
+    paths-ignore:
+      - "package.json"
+      - "CHANGELOG.md"
+
+jobs:
+  release-latest-changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: "0"
+      - name: Build Changelog
+        id: github_release
+        uses: mikepenz/release-changelog-builder-action@v2.1.0
+        with:
+          fromTag: "stable"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release
+        uses: ncipollo/release-action@v1.8.6
+        with:
+          tag: "latest"
+          name: "Latest"
+          prerelease: true
+          allowUpdates: true
+          body: ${{steps.github_release.outputs.changelog}}
+          token: ${{ secrets.GITHUB_TOKEN }}

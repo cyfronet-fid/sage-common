@@ -1,0 +1,426 @@
+@use "shared";
+
+.eosc-common {
+  &.top {
+    font-size: shared.$font-size-sm;
+    font-weight: shared.$font-weight-normal;
+    padding: 15px 0;
+    background: shared.$color-white;
+
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      flex-flow: row;
+      max-width: 100%;
+    }
+
+    .center-links {
+      text-align: center;
+      flex-grow: 0.8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: shared.$color-primary;
+
+    }
+
+    .left-links {
+      text-align: left;
+      display: flex;
+      align-items: center;
+
+      .header-logo {
+        width: 250px;
+        height: 28px;
+        background: url("assets/eosc-pl-logo.png") center no-repeat;
+        display: block;
+        background-size:250px auto;
+      }
+
+      .beyond-logo {
+        margin-left: 16px;
+        width: 185px;
+        height: 26px;
+        background: url("assets/logo-beyond-dark.png") center no-repeat;
+        background-size: contain;
+        display: block;
+      }
+
+      .beyond-logo {
+        margin-left: 16px;
+        width: 185px;
+        height: 26px;
+        background: url("assets/logo-beyond-dark.png") center no-repeat;
+        background-size: contain;
+        display: block;
+      }
+    }
+
+    .right-links {
+      text-align: right;
+      flex-basis: auto;
+      flex-shrink: 0;
+      align-items: center;
+      display: flex;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      gap: 5px;
+      min-width: 0;
+
+      #login-btn {
+        a {
+          color: black;
+        }
+      }
+
+      .browse-link {
+        margin-right: 0;
+        margin-left: 0;
+        flex-shrink: 0;
+
+        a {
+          border: 1px solid shared.$color-primary;
+          border-radius: 24px;
+          background: shared.$color-white;
+          font-size: 14px;
+          font-weight: 400;
+          position: relative;
+          padding: 7px 15px 7px 30px;
+          transition: all 0.25s ease;
+          white-space: nowrap;
+
+          svg {
+            margin-right: 1em;
+          }
+
+          &:before {
+            content:'';
+            position: absolute;
+            left: 8px;
+            top: 6px;
+            width: 16px;
+            height: 16px;
+            background: url("assets/search.svg") center no-repeat;
+            background-size: cover;
+            display: block;
+          }
+
+          &:hover {
+            -webkit-box-shadow: 0px 0px 12px 0px rgba(66, 68, 90, 0.2);
+            -moz-box-shadow: 0px 0px 12px 0px rgba(66, 68, 90, 0.2);
+            box-shadow: 0px 0px 12px 0px rgba(66, 68, 90, 0.2);
+            color: shared.$color-primary;
+          }
+        }
+      }
+
+      li {
+        font-size: 16px;
+        margin-right: 0;
+        margin-left: 0;
+        flex-shrink: 0;
+
+        svg {
+          width: 15px;
+          display: inline-block;
+          margin-bottom: 4px;
+          margin-right: 8px;
+        }
+
+        a {
+          color: shared.$color-primary;
+          font-size: 16px;
+        }
+      }
+
+      .dropdown {
+        display: inline;
+        margin-right: 10px;
+        flex-shrink: 0;
+
+        .account-dropdown {
+          display:inline-block;
+          cursor: pointer;
+          border-radius: 100%;
+          width: 32px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: none;
+          color: shared.$color-primary;
+
+          > svg {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+          }
+        }
+
+        .dropdown-menu {
+          left: auto !important;
+          background: shared.$color-white;
+          min-width: 200px;
+          padding: 0 0 4px;
+          border: 1px solid #eee;
+        }
+      }
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      line-height: calc(1.5 * #{shared.$font-size-base});
+
+      li {
+        margin: 0 calc(0.5 * 20px);
+        display: inline-block;
+        font-size: shared.$font-size-sm;
+        color: shared.$palette-gray-80;
+
+        svg {
+          width: 15px;
+          display: inline-block;
+          margin-bottom: 4px;
+        }
+
+        a {
+          color: shared.$color-primary;
+          padding-bottom: 4px;
+          font-weight: 400;
+          text-decoration: none;
+
+          &.active {
+            border-bottom: 2px solid shared.$color-primary;
+            font-weight: 400;
+          }
+
+          &:hover {
+            color: shared.$palette-gray-50;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+ul.login-dropdown {
+  list-style: none;
+  position: absolute;
+  display: block;
+  background-color: white;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: gray;
+  border-width: 1px;
+
+  li {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .eosc-common {
+    .top {
+      ul {
+        li {
+          margin: 0 6px;
+          font-size: 13px;
+
+          svg {
+            width: 11px;
+            margin-bottom: 3px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+
+      .center-links {
+        text-align: right;
+        padding-right: 20px;
+      }
+
+      .right-links {
+
+        a {
+          font-size: 13px;
+        }
+        left-links
+        .dropdown {
+          .account-dropdown {
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.commons-header ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.commons-header .menu li a {
+  display: block;
+  text-decoration: none;
+}
+
+.commons-header .menu li a:hover,
+.commons-header .menu-btn:hover {
+  color: shared.$color-primary;
+}
+
+/* menu */
+
+.commons-header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.commons-header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 19px 20px;
+  position: absolute;
+  left: 44%;
+  user-select: none;
+}
+
+.commons-header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 22px;
+}
+
+.commons-header .menu-icon .navicon:before,
+.commons-header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.commons-header .menu-icon .navicon:before {
+  top: 7px;
+}
+
+.commons-header .menu-icon .navicon:after {
+  top: -7px;
+}
+
+/* menu btn */
+
+.commons-header .menu-btn {
+  display: none !important;
+}
+
+.commons-header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.commons-header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.commons-header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.commons-header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.commons-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.commons-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+@media (min-width: 992px) {
+
+  .commons-header .menu li {
+    float: left;
+  }
+
+  .commons-header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .commons-header .menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .eosc-common.top .container {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: block;
+  }
+
+  .eosc-common.top .left-links {
+    align-items: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: -13px;
+  }
+
+  .eosc-common.top .left-links .beyond-logo {
+    margin-left: 0;
+    width: 120px;
+    height: 20px;
+    margin-top: 12px;
+  }
+
+  .eosc-common.top .left-links .header-logo {
+    width: 150px;
+    height: 30px;
+    background-size: 150px auto;
+  }
+
+  .eosc-common.top .right-links {
+    position: absolute;
+    top: 22px;
+    display: block;
+    right: 10px;
+  }
+
+  .eosc-common.top .left-links {
+    float: left;
+  }
+
+  .eosc-common.top .center-links {
+    display: block;
+  }
+
+  .eosc-common.top .center-links li {
+    width: 100%;
+    margin: 4px 0;
+  }
+
+}

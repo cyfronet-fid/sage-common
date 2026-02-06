@@ -1,0 +1,8 @@
+@use "main-header";
+@use "main-footer";
+@use "totop-wrapper";
+@use "global";
+
+.eosc-common {
+  @import "../node_modules/bootstrap/scss/bootstrap";
+}
