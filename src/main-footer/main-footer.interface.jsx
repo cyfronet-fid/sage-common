@@ -36,8 +36,10 @@ class EoscCommonMainFooter extends Component {
     return (
       <div>
         <footer className={`eosc-common footer pt-3 pb-3 ${production ? "" : "demo"}`}>
-          <div className="container">
+          <div className="container d-flex justify-content-between gap-4">
+            <div className="footer-logo"></div>
             <EoscMainFooterCols termsOfUse={termsOfUse} privacyPolicy={privacyPolicy} />
+            <div className="footer-decor"></div>
           </div>
 
           <div className="eosc-common copyright container">

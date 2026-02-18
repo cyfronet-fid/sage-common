@@ -6,33 +6,15 @@
       "navBtns": [
         {
           "label": "Browse resources",
-          "url": "https://eosc.pl/search/all_collection?q=*&scope=pl"
+          "url": "#"
         },
         {
           "label": "Your projects",
-          "url": "https://marketplace.eosc.pl/projects"
+          "url": "#"
         },
         {
           "label": "User documentations",
-          "url": "https://marketplace.eosc.pl/user_documentation"
-        }
-      ]
-    },
-    {
-      "label": "For providers",
-      "url": "#",
-      "navBtns": [
-        {
-          "label": "Backoffice",
-          "url": "https://marketplace.eosc.pl/backoffice/services"
-        },
-        {
-          "label": "Become a provider",
-          "url": "https://marketplace.eosc.pl/backoffice/providers"
-        },
-        {
-          "label": "Marketplace API",
-          "url": "https://marketplace.eosc.pl/api_docs"
+          "url": "#"
         }
       ]
     },
@@ -40,20 +22,8 @@
       "label": "Partners",
       "url": "#",
       "navBtns": [
-        {"label": "Narodowe centrum Nauki",
-        "url": "https://ncn.gov.pl/"},
-        {
-          "label": "ACK Cyfronet AGH",
-          "url": "https://www.cyfronet.pl/"
-        },
-        {
-          "label": "Politechnika Gdańska",
-          "url": "https://pg.edu.pl/"
-        },
-        {
-          "label": "Uniwersytet Warszawski",
-          "url": "https://www.uw.edu.pl/"
-        }
+        {"label": "Partner demo",
+          "url": "#"}
       ]
     },
     {
@@ -61,16 +31,8 @@
       "url": "#",
       "navBtns": [
         {
-          "label": "contact@eosc.pl",
-          "url": "mailto:contact@eosc.pl"
-        },
-        {
-          "label": "onboarding@eosc.pl",
-          "url": "mailto:onboarding@eosc.pl"
-        },
-        {
-          "label": "support@eosc.pl",
-          "url": "mailto:support@eosc.pl"
+          "label": "contact@sage.pl",
+          "url": "mailto:contact@sage.pl"
         }
       ]
     }
