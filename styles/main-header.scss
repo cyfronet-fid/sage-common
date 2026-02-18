@@ -33,11 +33,11 @@
       align-items: center;
 
       .header-logo {
-        width: 250px;
-        height: 28px;
-        background: url("assets/eosc-pl-logo.png") center no-repeat;
+        width: 127px;
+        height: 50px;
+        background: url("assets/sage-logo.svg") center no-repeat;
         display: block;
-        background-size:250px auto;
+        background-size: 127px auto;
       }
 
       .beyond-logo {
@@ -387,7 +387,7 @@ ul.login-dropdown {
     align-items: flex-start;
     flex-direction: column;
     align-content: flex-start;
-    margin-top: -13px;
+    margin-top: -6px;
   }
 
   .eosc-common.top .left-links .beyond-logo {
@@ -398,9 +398,9 @@ ul.login-dropdown {
   }
 
   .eosc-common.top .left-links .header-logo {
-    width: 150px;
-    height: 30px;
-    background-size: 150px auto;
+    width: 127px;
+    height: 50px;
+    background-size: 127px auto;
   }
 
   .eosc-common.top .right-links {

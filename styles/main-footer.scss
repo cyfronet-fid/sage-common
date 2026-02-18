@@ -4,48 +4,48 @@
   &.copyright {
     font-size: 12px;
     font-weight: 400;
-    color: #24727B;
+    color: #1B2827;
     text-align: center;
     padding: 55px 0 15px;
 
     a {
       font-size: calc(0.75 * #{shared.$font-size-base});
-      color: #24727B;
+      color: #99CA3C;
       text-decoration: underline;
 
       &:hover {
         text-decoration: none;
-        color: #363939;
+        color: #6d8827;
       }
     }
   }
 
   &.footer {
     width: 100%;
-    background: #fff url("assets/eosc-pl-footer-bg.png") 50% 0 no-repeat;
-    background-size: auto 100%;
+    background: #fff !important;
     font-weight: 400;
     padding: 60px 0 0;
 
-    .logo-one {
-      background: url("assets/eosc-logo-mono.png") top center no-repeat;
-      background-size: 135px auto;
-      width: 135px;
-      height: 55px;
+    .footer-logo {
+      background: url("assets/sage-logo-footer.svg") top center no-repeat;
+      background-size: 289px auto;
+      width: 289px;
+      height: 88px;
       display: block;
     }
 
-    .logo-two {
-      background: url("assets/eosc-pl-footer-logo.png") no-repeat;
-      width: 93px;
-      height: 124px;
+    .footer-decor {
+      background: url("assets/footer-decor.svg") top center no-repeat;
+      background-size: 249px auto;
+      width: 249px;
+      height: 239px;
       display: block;
     }
 
     h4 {
-      color: #24727B;
+      color: #1B2827;
       text-align: center;
-      font-family: "Quicksand", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 24px;
       font-style: normal;
       margin-bottom: 17px;
@@ -79,10 +79,10 @@
           font-family: "Roboto", Arial;
           line-height: 1.1;
           text-decoration: none;
-          color: #363939;
+          color: #1B2827;
 
           &:hover {
-            color: #24727B;
+            color: #99CA3C;
             text-decoration: none;
           }
         }
