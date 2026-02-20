@@ -6,15 +6,11 @@
       "navBtns": [
         {
           "label": "Browse resources",
-          "url": "#"
-        },
-        {
-          "label": "Your projects",
-          "url": "#"
+          "url": "https://beta.catalogue.gdds.eu/search/all_collection?q=*"
         },
         {
           "label": "User documentations",
-          "url": "#"
+          "url": "https://github.com/SAGE-EU"
         }
       ]
     },
@@ -22,8 +18,10 @@
       "label": "Partners",
       "url": "#",
       "navBtns": [
-        {"label": "Partner demo",
-          "url": "#"}
+        {
+          "label": "collaboration@sage.pl",
+          "url": "mailto:collaboration@sage.pl"
+        }
       ]
     },
     {

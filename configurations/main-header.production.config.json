@@ -1,14 +1,10 @@
 [
   {
-    "label": "About EOSC PL",
-    "url": "https://eosc.gov.pl/"
+    "label": "About Sage",
+    "url": "https://www.greendealdata.eu/"
   },
   {
     "label": "Browse resources",
-    "url": "https://eosc.pl/search/all_collection?q=*"
-  },
-  {
-    "label": "Onedata",
-    "url": "https://data.eosc.pl/"
+    "url": "https://beta.catalogue.gdds.eu/search/all_collection?q=*"
   }
 ]
