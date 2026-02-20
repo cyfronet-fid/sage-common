@@ -26,9 +26,9 @@ class EoscCommonMainFooter extends Component {
   static defaultProps = {
     production: environment.production,
     socialIcons: environment.mainFooterConfig.socials,
-    termsOfUse: "https://eosc.pl/terms-of-use",
-    privacyPolicy: "https://eosc.pl/privacy-policy",
-    logoPack: "https://s3.cloud.cyfronet.pl/eosc-pl-common/assets/eosc-node-poland.zip"
+    termsOfUse: "https://beta.catalogue.gdds.eu/terms-of-use",
+    privacyPolicy: "https://beta.catalogue.gdds.eu/privacy-policy",
+    logoPack: "https://s3.cloud.cyfronet.pl/sage-common/assets/sage-logo.svg"
   };
 
   render(props) {
