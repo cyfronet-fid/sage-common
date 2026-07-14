@@ -6,6 +6,6 @@
     "lg": 992,
     "xl": 1200
   },
-  "autoLoginDomains": [".eosc.pl", "eosc.pl", "localhost", ".docker-fid.grid.cyf-kr.edu.pl"]
+  "autoLoginDomains": ["localhost"]
 }
 

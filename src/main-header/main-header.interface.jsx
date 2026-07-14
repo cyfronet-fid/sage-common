@@ -79,9 +79,9 @@ class EoscCommonMainHeader extends Component {
                   />
                 ))}
               </ul>
-              <ul className="right-links">
-                {getAuthBtn(parsedProps)}
-              </ul>
+              {/*<ul className="right-links">*/}
+              {/*  {getAuthBtn(parsedProps)}*/}
+              {/*</ul>*/}
             </div>
           </nav>
         </div>
