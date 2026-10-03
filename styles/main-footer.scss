@@ -11,7 +11,7 @@
     a {
       font-size: calc(0.75 * #{shared.$font-size-base});
       color: #99CA3C;
-      text-decoration: underline;
+      text-decoration: none;
 
       &:hover {
         text-decoration: none;
@@ -79,10 +79,10 @@
           font-family: "Roboto", Arial;
           line-height: 1.1;
           text-decoration: none;
-          color: #1B2827;
+          color: #99CA3C;
 
           &:hover {
-            color: #99CA3C;
+            color: #2F523D;
             text-decoration: none;
           }
         }
